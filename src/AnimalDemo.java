@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
+public class AnimalDemo{
 
-public class AnimalDemo {
 }
