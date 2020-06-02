@@ -6,6 +6,7 @@ public class Dog extends Animal {
 
     }
 
+
     public void DogInfo() {
         System.out.println("Собака имя: " + name + " цвет: " + color);
     }
