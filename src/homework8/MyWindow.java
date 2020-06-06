@@ -8,15 +8,12 @@ import java.awt.event.ActionListener;
 
 public class MyWindow extends JFrame {
     public MyWindow() {
-        setTitle("Test Window");
+        setTitle("calc.exe");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setBounds(300, 300, 400, 400);
         setVisible(true);
-
         JTextField jtf = new JTextField();
-
         add(jtf);
-
         String[] chars = new String[]{
                 "%", "CE", "C", "<---",
                 " ", "7", "8", "9", "*",
@@ -29,7 +26,7 @@ public class MyWindow extends JFrame {
             jb.addActionListener(new ButtonListener(jtf));
             add(jb);
         }
-
+        SwingUtilities.updateComponentTreeUI(this);
     }
 }
 
